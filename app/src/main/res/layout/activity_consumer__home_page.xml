@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myapp.stranderdlog.Consumer_Home_page"
+    android:background="#eca4a4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:background="#eca4a4">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/set_meter_button"
+            android:src="@drawable/setmeter_icon"
+            android:contentDescription="@string/abc_action_bar_home_description_format"
+            android:layout_weight="1.0"
+            android:onClick="go_setMeterID"
+            android:background="#ffffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/set_meter_id"
+            android:textSize="@dimen/abc_text_size_body_2_material"
+            android:id="@+id/textView"
+            android:background="#ffffffff"
+            android:gravity="center"
+            android:textIsSelectable="false" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/profile_button"
+            android:text="@string/Profile"
+            android:onClick="go_profile"
+            android:src="@drawable/profile_icon"
+            android:contentDescription="@string/abc_action_bar_home_description_format"
+            android:layout_weight="1.0"
+            android:background="#ffffffff"
+            android:longClickable="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/profile"
+            android:textSize="@dimen/abc_text_size_body_2_material"
+            android:id="@+id/textView2"
+            android:background="#ffffffff"
+            android:gravity="center"
+            android:textIsSelectable="false" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/usage_button"
+            android:src="@drawable/usage_icon"
+            android:contentDescription="@string/abc_action_bar_home_description_format"
+            android:layout_weight="1.0"
+            android:background="#ffffffff"
+            android:onClick="go_usage_graph"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/current_usage"
+            android:textSize="@dimen/abc_text_size_body_2_material"
+            android:id="@+id/textView3"
+            android:background="#ffffffff"
+            android:gravity="center"
+            android:textIsSelectable="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/camera_button"
+            android:src="@drawable/camera_icon"
+            android:onClick="go_camera"
+            android:contentDescription="@string/abc_action_bar_home_description_format"
+            android:layout_weight="1.0"
+            android:background="#ffffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/generate_bill"
+            android:textSize="@dimen/abc_text_size_body_2_material"
+            android:id="@+id/textView4"
+            android:background="#ffffffff"
+            android:gravity="center"
+            android:textIsSelectable="false" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/History_button"
+            android:src="@drawable/history_icon"
+            android:onClick="go_history"
+            android:contentDescription="@string/abc_action_bar_home_description_format"
+            android:layout_weight="1.0"
+            android:background="#ffffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/history"
+            android:textSize="@dimen/abc_text_size_body_2_material"
+            android:id="@+id/textView5"
+            android:background="#ffffffff"
+            android:gravity="center"
+            android:textIsSelectable="false" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/set_limit_button"
+            android:src="@drawable/set_limit_icon"
+            android:contentDescription="@string/abc_action_bar_home_description_format"
+            android:onClick="go_set_limit"
+            android:layout_weight="1.0"
+            android:background="#ffffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/set_limit"
+            android:textSize="@dimen/abc_text_size_body_2_material"
+            android:id="@+id/textView6"
+            android:background="#ffffffff"
+            android:gravity="center"
+            android:textIsSelectable="false" />
+    </LinearLayout>
+
+
+</LinearLayout>

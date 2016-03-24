@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myapp.stranderdlog">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+        <activity
+            android:name=".Consumer_Home_page"
+            android:label="@string/title_activity_user__home_page" />
+        <activity
+            android:name=".UserProfile"
+            android:label="@string/title_activity_user_profile"
+            android:parentActivityName=".Consumer_Home_page">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Consumer_Home_page" />
+        </activity>
+        <activity
+            android:name=".register"
+            android:label="@string/title_activity_register" />
+        <activity
+            android:name=".Meter_Reader_register"
+            android:label="@string/title_activity_meter__reader_register"
+            android:parentActivityName=".LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.myapp.stranderdlog.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".Consumer_register"
+            android:label="@string/title_activity_consumer_register"
+            android:parentActivityName=".LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.myapp.stranderdlog.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".Meter_reader_home"
+            android:label="@string/title_activity_meter_reader_home" />
+        <activity
+            android:name=".ConsumerCameraActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AfterDataSend"
+            android:label="@string/title_activity_after_data_send"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".enterDataManually"
+            android:label="@string/title_activity_enter_data_manually"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConsumerSelectMeterId"
+            android:label="@string/title_activity_consumer_select_meter_id"
+            android:parentActivityName=".Consumer_Home_page"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.myapp.stranderdlog.Consumer_Home_page" />
+        </activity>
+        <activity
+            android:name=".Consumer_image_data_get"
+            android:label="@string/title_activity_consumer_image_data_get"
+            android:parentActivityName=".ConsumerCameraActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.myapp.stranderdlog.ConsumerCameraActivity" />
+        </activity>
+        <activity
+            android:name=".consumerMeterIDSet"
+            android:label="@string/title_activity_consumer_meter_idset"
+            android:parentActivityName=".Consumer_Home_page">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.myapp.stranderdlog.Consumer_Home_page" />
+        </activity>
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity
+            android:name=".ConsumerHistory"
+            android:label="@string/title_activity_consumer_history" />
+        <activity
+            android:name=".consumer_usage_graph"
+            android:label="@string/title_activity_consumer_usage_graph"
+            android:parentActivityName=".Consumer_Home_page">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.myapp.stranderdlog.Consumer_Home_page" />
+        </activity>
+        <activity
+            android:name=".consumer_global_historylist"
+            android:label="@string/title_activity_consumer_global_historylist" />
+        <activity
+            android:name=".consumer_full_history_page"
+            android:label="@string/title_activity_consumer_full_history_page"
+            android:parentActivityName=".Consumer_Home_page">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.myapp.stranderdlog.Consumer_Home_page" />
+        </activity>
+        <activity
+            android:name=".consumer_local_historylist"
+            android:label="@string/title_activity_consumer_local_historylist" />
+        <activity
+            android:name=".consumer_history_page"
+            android:label="@string/title_activity_consumer_history_page"
+            android:parentActivityName=".Consumer_Home_page">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.myapp.stranderdlog.Consumer_Home_page" />
+        </activity>
+        <activity
+            android:name=".after_job_done"
+            android:label="@string/title_activity_after_job_done"
+            android:parentActivityName=".ConsumerCameraActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.myapp.stranderdlog.ConsumerCameraActivity" />
+        </activity>
+        <activity
+            android:name=".Consumer_limit_set"
+            android:label="@string/title_activity_consumer_limit_set"
+            android:parentActivityName=".Consumer_Home_page">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.myapp.stranderdlog.Consumer_Home_page" />
+        </activity>
+        <activity
+            android:name=".consumer_limit_show_grpahs"
+            android:label="@string/title_activity_consumer_limit_show_grpahs" />
+        <activity
+            android:name=".consumer_type_set_limit"
+            android:label="@string/title_activity_consumer_type_set_limit"></activity>
+    </application>
+
+</manifest>

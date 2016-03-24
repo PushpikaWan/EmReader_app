@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">EMReader</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="click">Click here</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_user__home_page">User_Home_page</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+    <string name="First_name">First name</string>
+    <string name="Last_name">Last name</string>
+    <string name="Logout">Sign out</string>
+    <string name="Address">Address</string>
+    <string name="title_activity_register">register</string>
+    <string name="Email_address">Email address</string>
+    <string name="Register"><u>Sign Up for EM Reader</u> </string>
+    <string name="Password">Password</string>
+    <string name="Covering_areas">Covering areas</string>
+    <string name="Confirm_password">Confirm Password</string>
+    <string name="No">No</string>
+    <string name="Street">Street</string>
+    <string name="City">City</string>
+    <string name="register"> Register </string>
+    <string name="Profile">Profile</string>
+    <string name="No_Of_Meters">No of Meters</string>
+    <string name="Meter_ID">Meter ID</string>
+    <string name="Contact">Contact</string>
+    <string name="choose_user">Choose user type</string>
+    <string name="edit1_text">EditText Widget</string>
+    <string name="edit2_text">Disabled EditText Widget</string>
+    <string name="intro">Capture a picture to crop!</string>
+    <string name="picture">Picture</string>
+    <string name="capture">Capture</string>
+    <color name="blue">#0099cc</color>
+    <string-array name="user_types">
+        <item>Consumer</item>
+        <item>Meter Reader</item>
+    </string-array>
+    <string name="title_activity_meter_reader_register">Meter_reader_register</string>
+    <string name="title_activity_meter__reader_register">Meter_Reader_register</string>
+    <string name="title_activity_consumer_register">Consumer_register</string>
+    <string name="title_activity_consumer_home">Consumer_home</string>
+    <string name="title_activity_meter_reader_home">Meter_reader_home</string>
+    <string name="set_limit">Set Limit</string>
+    <string name="history">History</string>
+    <string name="generate_bill">Generate bill</string>
+    <string name="current_usage">Current usage</string>
+    <string name="profile">Profile</string>
+    <string name="set_meter_id">Set Meter ID</string>
+    <string name="next_ID">Next ID</string>
+    <string name="full_image">Full image</string>
+    <string name="cropped_image_reading">Meter reading</string>
+    <string name="cropped_image_id">Meter ID</string>
+    <string name="save_send">Save and Send</string>
+    <string name="title_activity_after_data_send">AfterDataSend</string>
+    <string name="title_activity_enter_data_manually">enterDataManually</string>
+    <string name="meter_id">Meter ID</string>
+    <string name="meter_reading">Meter reading</string>
+    <string name="enter_manually">Enter manually</string>
+    <string name="Meter_id_ent">Meter ID</string>
+    <string name="meter_reading_ent">Meter Reading</string>
+    <string name="s_and_s">Save and Send</string>
+
+    <string-array name="spinner_item">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+
+    </string-array>
+    <string name="title_activity_consumer_select_meter_id">ConsumerSelectMeterId</string>
+    <string name="nextbtn">NEXT</string>
+    <string name="setmeterId">Set your meter id first</string>
+    <string name="title_activity_consumer_image_data_get">Consumer_image_data_get</string>
+    <string name="usage">showUsage</string>
+    <string name="image_data_units">dataUnits</string>
+    <string name="mail_id">Email ID</string>
+    <string name="cont">Contact</string>
+    <string name="title_activity_consumer_meter_idset">consumerMeterIDSet</string>
+    <string name="okBtn">OK</string>
+    <string name="setm">Set Meter ID</string>
+    <string name="cur_date">Current Date</string>
+    <string name="lst_reading">Last Reading</string>
+    <string name="rental">Rental</string>
+    <string name="arrears">Arrears</string>
+    <string name="amount">Amount</string>
+    <string name="title_activity_consumer_history">ConsumerHistory</string>
+    <string name="title_activity_consumer_usage_graph">consumer_usage_graph</string>
+    <string name="title_activity_consumer_global_historylist">consumer_global_historylist</string>
+    <string name="title_activity_consumer_full_history_page">consumer_full_history_page</string>
+    <string name="title_activity_consumer_local_historylist">consumer_local_historylist</string>
+    <string name="title_activity_consumer_history_page">consumer_history_page</string>
+    <string name="local_reading_history">Local reading History</string>
+    <string name="global_read_history">Global reading history</string>
+    <string name="title_activity_after_job_done">after_job_done</string>
+    <string name="title_activity_consumer_limit_set">Consumer_limit_set</string>
+    <string name="title_activity_consumer_limit_show_grpahs">consumer_limit_show_grpahs</string>
+    <string name="title_activity_consumer_type_set_limit">consumer_type_set_limit</string>
+
+</resources>

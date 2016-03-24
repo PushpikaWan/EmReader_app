@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_horizontal"
+    android:orientation="vertical" android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.myapp.stranderdlog.LoginActivity"
+    android:background="@drawable/back7">
+
+    <!-- Login progress -->
+    <ProgressBar android:id="@+id/login_progress" style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" android:visibility="gone" />
+
+    <ScrollView android:id="@+id/login_form" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:id="@+id/email_login_form" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical">
+
+            <TextView
+                android:text="@string/First_name"
+                android:id="@+id/First_name_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:hint="@string/First_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/First_name"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:text="@string/Last_name"
+                android:id="@+id/Last_name_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:hint="@string/Last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Last_name"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:text="@string/Address"
+                android:id="@+id/Address_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:hint="@string/No"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Address_no"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginBottom="5dp" />
+            <EditText
+                android:hint="@string/Street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Address_street"
+                android:maxLines="1"
+                android:singleLine="true"
+                />
+            <EditText
+                android:hint="@string/City"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Address_city"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:text="@string/Covering_areas"
+                android:id="@+id/Covering_area_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:hint="@string/Covering_areas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Covering_area"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:text="@string/Contact"
+                android:id="@+id/contact_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:hint="@string/Contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:id="@+id/Contact"
+                android:singleLine="true"
+                android:inputType="number"
+                android:layout_marginBottom="5dp" />
+
+
+            <TextView
+                android:text="@string/Email_address"
+                android:id="@+id/Email_address_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <AutoCompleteTextView android:id="@+id/Email_address" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress" android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:text="@string/Password"
+                android:id="@+id/password_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText android:id="@+id/Password" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified" android:inputType="textPassword"
+                android:maxLines="1" android:singleLine="true"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:text="@string/Confirm_password"
+                android:id="@+id/confirm_password_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText android:id="@+id/Confirm_password" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="@string/Confirm_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified" android:inputType="textPassword"
+                android:maxLines="1" android:singleLine="true"
+                android:layout_marginBottom="5dp" />
+
+
+
+            <Button android:id="@+id/bRegister" style="?android:textAppearanceSmall"
+                android:layout_width="match_parent" android:layout_height="45dp"
+                android:layout_marginTop="16dp" android:text="@string/register"
+                android:textStyle="bold"
+                android:onClick="send_data"
+                android:textColor="#fff"
+                android:background="#cc2121"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
